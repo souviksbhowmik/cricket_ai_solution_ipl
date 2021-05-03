@@ -1,0 +1,192 @@
+{
+  "batsman_encoding": {
+    "start_date": "2009-01-01",
+    "end_date": "2015-12-31",
+    "files": [
+      "batsman_enc_map.pkl"
+    ]
+  },
+  "bowler_encoding": {
+    "start_date": "2009-01-01",
+    "end_date": "2015-12-31",
+    "files": [
+      "bowler_enc_map.pkl"
+    ]
+  },
+  "location_encoding": {
+    "start_date": "2009-01-01",
+    "end_date": "2015-12-31",
+    "files": [
+      "loc_enc_map.pkl"
+    ]
+  },
+  "adversarial_train_xy": {
+    "start_date": "2009-01-01",
+    "end_date": "2014-12-31",
+    "files": [
+      "adversarial_feature_batsman_oh_train_x.pkl",
+      "adversarial_feature_position_oh_train_x.pkl",
+      "adversarial_feature_location_oh_train_x.pkl",
+      "adversarial_feature_bowler_oh_train_x.pkl",
+      "adversarial_feature_runs_scored_train_y.pkl"
+    ]
+  },
+  "adversarial_test_xy": {
+    "start_date": "2015-01-01",
+    "end_date": "2021-05-03",
+    "files": [
+      "adversarial_feature_batsman_oh_test_x.pkl",
+      "adversarial_feature_position_oh_test_x.pkl",
+      "adversarial_feature_location_oh_test_x.pkl",
+      "adversarial_feature_bowler_oh_test_x.pkl",
+      "adversarial_feature_runs_scored_test_y.pkl"
+    ]
+  },
+  "batsman_position_opponent_location_embedding": {
+    "train_metrics": [
+      24.248882293701172,
+      3.555158853530884
+    ],
+    "test_metrics": [
+      27.0743465423584,
+      3.7543160915374756
+    ],
+    "info": "metrics is mse,mae(best mae)",
+    "files": [
+      "adversarial_run_model.json",
+      "adversarial_run_model.h5",
+      "adversarial_model.json",
+      "adversarial_model.h5",
+      "adversarial_batsman_model.json",
+      "adversarial_batsman_model.h5",
+      "adversarial_bowler_model.json",
+      "adversarial_bowler_model.h5",
+      "adversarial_location_model.json",
+      "adversarial_location_model.h5",
+      "adversarial_position_model.json",
+      "adversarial_position_model.h5"
+    ]
+  },
+  "adversarial_first_innings_train_xy": {
+    "start_date": "2009-01-01",
+    "end_date": "2014-12-31",
+    "files": [
+      "adversarial_first_innings_train_x.pkl",
+      "adversarial_first_innings_train_y.pkl"
+    ]
+  },
+  "adversarial_first_innings_test_xy": {
+    "start_date": "2015-01-01",
+    "end_date": "2021-05-03",
+    "files": [
+      "adversarial_first_innings_test_x",
+      "adversarial_first_innings_test_y"
+    ]
+  },
+  "adversarial_first_innings_runs": {
+    "train_metrics": [
+      11.189303874038336,
+      17.15865218081257,
+      500.07934956067265,
+      0.3690948575016355
+    ],
+    "test_metrics": [
+      15.530614322847327,
+      22.860242053215067,
+      809.7635493031211,
+      0.3690948575016355
+    ],
+    "info": "metrics is mape,mae, mse- selected,adjusted r square ",
+    "files": [
+      "advesarial_first_innings.pkl"
+    ]
+  },
+  "adversarial_second_innings_train_xy": {
+    "start_date": "2009-01-01",
+    "end_date": "2014-12-31",
+    "files": [
+      "adversarial_second_innings_train_x.pkl",
+      "adversarial_second_innings_train_y.pkl"
+    ]
+  },
+  "adversarial_second_innings_test_xy": {
+    "start_date": "2015-01-01",
+    "end_date": "2021-05-03",
+    "files": [
+      "adversarial_second_innings_test_x",
+      "adversarial_second_innings_test_y"
+    ]
+  },
+  "adversarial_second_innings_runs": {
+    "train_metrics": 0.8532934131736527,
+    "test_metrics": 0.8454545454545455,
+    "info": "metrics is accuracy ",
+    "files": [
+      "advesarial_second_innings.pkl"
+    ]
+  },
+  "first_innings_base_train_xy": {
+    "start_date": "2009-01-01",
+    "end_date": "2014-12-31",
+    "files": [
+      "first_innings_base_train_x.pkl",
+      "first_innings_base_train_y.pkl",
+      "first_innings_base_columns.pkl"
+    ]
+  },
+  "first_innings_base_test_xy": {
+    "start_date": "2015-01-01",
+    "end_date": "2021-05-03",
+    "files": [
+      "first_innings_base_test_x.pkl",
+      "first_innings_base_test_y.pkl"
+    ]
+  },
+  "selected_first_innings_features": {
+    "train_metrics": [
+      13.775961455421632,
+      20.26429336422791,
+      705.4886656456371,
+      0.19149790854594184
+    ],
+    "test_metrics": [
+      12.440838723196912,
+      19.947796186637778,
+      618.4060205564165,
+      0.19149790854594184
+    ],
+    "info": "metrics is mape,mae,mse,adjusted r quared - selected :['batsman_mean', 'batsman_sum']",
+    "files": [
+      "first_innings_selected_features.pkl",
+      "first_innings_model_base.pkl",
+      "first_innings_selected_colindex.pkl"
+    ]
+  },
+  "second_innings_base_train_xy": {
+    "start_date": "2009-01-01",
+    "end_date": "2014-12-31",
+    "files": [
+      "second_innings_base_train_x.pkl",
+      "second_innings_base_train_y.pkl",
+      "second_innings_base_columns.pkl"
+    ]
+  },
+  "second_innings_base_test_xy": {
+    "start_date": "2015-01-01",
+    "end_date": "2021-05-03",
+    "files": [
+      "second_innings_base_test_x.pkl",
+      "second_innings_base_test_y.pkl"
+    ]
+  },
+  "selected_second_innings_features": {
+    "train_metrics": 0.7857142857142857,
+    "test_metrics": 0.8652482269503546,
+    "info": "metrics is accuracy - selected :['batsman_mean', 'batsman_sum', 'target_score']",
+    "files": [
+      "second_innings_selected_features.pkl",
+      "second_innings_model_base.pkl",
+      "second_innings_selected_colindex.pkl"
+    ]
+  }
+}
